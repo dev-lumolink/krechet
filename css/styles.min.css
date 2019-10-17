@@ -5342,8 +5342,8 @@ header .container {
 }
 
 .title--slider {
-    font-size: 64px;
-    line-height: 74px;
+    font-size: 32px;
+    line-height: 1.4;
     font-weight: 700;
     text-align: left;
     color: #fff;
@@ -6111,7 +6111,7 @@ select {
 
 @media (max-width:768px) {
     .features__navigation {
-        display: none
+        /* display: none */
     }
 }
 
@@ -6127,55 +6127,29 @@ select {
     padding: 10px 20px
 }
 
-.features__list {
-    max-height: 528px
-}
-
 .features__item {
-    overflow: hidden;
-    height: 528px;
+    position: relative;
     background-size: cover;
-    background-position: left center
-}
-
-@media (max-width:768px) {
-    .features__item {
-        height: 342px
-    }
+    background-position: left center;
+    overflow: hidden;
 }
 
 .features__item .info {
-    padding: 64px;
-    position: absolute;
-    background-image: url(../img/@2x/slider.png);
-    background-repeat: no-repeat;
-    background-position: center right;
-    width: 50%;
-    height: 528px
+    padding: 120px 60px;
+    position: relative;
+    background: linear-gradient(45deg, rgba(255, 74, 58, .8), #bf392d);
+    transform: skew(-15deg, 0);
+    margin: 0 -5px;
 }
 
-@media (max-width:768px) {
-    .features__item .info {
-        width: 80%;
-        height: 342px;
-        padding: 24px
-    }
-}
-
-.features__item .info .text {
-    max-width: 350px
-}
-
-@media (max-width:768px) {
-    .features__item .info .text {
-        max-width: 140px
-    }
+.features__item .title--slider,
+.features__item .text {
+    transform: skew(15deg, 0);
 }
 
 .features .arrow__block {
-    position: absolute;
-    padding-left: 64px;
-    bottom: 60px
+    position: relative;
+    display: block;
 }
 
 .review__list {
@@ -6494,6 +6468,11 @@ section {
     .features {
       padding-top: 40px;
     }
+    .features__item .info,
+    .features__item .title--slider,
+    .features__item .text {
+        transform: skew(0, 0);
+    }
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -6508,6 +6487,9 @@ section {
     }
     .col {
         width: calc(100% / 2 - 30px);
+    }
+    .col.col--3of4 {
+        width: calc(100% / 4 * 3);
     }
     .link.link--phone {
         display: inline-block;
@@ -6565,6 +6547,9 @@ section {
     }
     .col {
         width: calc(100% / 2 - 30px);
+    }
+    .col.col--3of4 {
+        width: calc(100% / 4 * 3);
     }
     .link.link--phone {
         display: inline-block;
@@ -6625,6 +6610,9 @@ section {
     }
     .col {
         width: calc(100% / 2 - 30px);
+    }
+    .col.col--3of4 {
+        width: calc(100% / 4 * 3);
     }
     .link.link--phone {
         display: inline-block;
