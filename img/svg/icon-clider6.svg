@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.844" height="24" viewBox="0 0 21.844 24">
+    <defs>
+        <style>
+            .cls-1{fill:url(#linear-gradient)}
+        </style>
+        <linearGradient id="linear-gradient" x1="1" x2="0" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ff4a3a"/>
+            <stop offset="1" stop-color="#bf392d"/>
+        </linearGradient>
+    </defs>
+    <path id="Computers_have_becom" d="M13.431 5.135H9.1v1.546h5.238v4.066H9.1v3.07H4.056v-3.07H.646V6.681h3.41V5.135H.646V1.068h3.41v-11.25h9.375a10.837 10.837 0 0 1 4.881 1.014A7.447 7.447 0 0 1 21.424-6.4a7.338 7.338 0 0 1 1.066 3.964 7.156 7.156 0 0 1-1.09 4.02 7.156 7.156 0 0 1-3.14 2.625 11.6 11.6 0 0 1-4.829.926zM9.1 1.068h4.2a4.488 4.488 0 0 0 3.126-.931 3.231 3.231 0 0 0 .99-2.514 3.655 3.655 0 0 0-.979-2.613 3.91 3.91 0 0 0-3.006-1.066H9.1z" class="cls-1" data-name="Computers have becom" transform="translate(-.646 10.182)"/>
+</svg>

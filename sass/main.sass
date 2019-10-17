@@ -1,0 +1,718 @@
+@import vars
+@import fonts
+@import libs
+
+*, *:before, *:after, p 
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+body 
+	font-family: 'Inter', sans-serif
+	font-size: 18px
+	line-height: 32px
+	font-weight: 400
+	font-size: $text-size
+	color: $black
+
+img
+	max-width: 100%
+	height: auto 
+
+ul,ol
+	@include list
+
+a
+	color: inherit
+	&:hover
+		color: $red
+		text-decoration: none
+
+header 
+	height: 100px
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 9
+	@media (max-width: 768px)
+		background-color: #ffffff
+	.container
+		padding: 20px 0
+		border-bottom: $bottom-line
+		display: flex
+
+section
+	margin-bottom: 120px
+
+.container 
+	max-width: $desctop
+	width: 100%
+	margin: 0% auto
+	position: relative
+	padding: 0 100px
+	text-align: center
+	
+	@media (max-width: 768px)
+		flex-flow: column
+		max-width: $mobile
+		padding: 0 15px
+
+.logo
+	@media (max-width: 768px)
+		width: 100%
+		display: block
+		text-align: center
+	&__img 
+		width: 186px
+		height: 60px
+		object-fit: contain
+		margin-right: 24px
+		@media (max-width: 768px)
+			margin-right: 0
+	&__text 
+		display: inline-block
+		max-width: 295px
+		vertical-align: middle
+		color: $red
+		font-size: 20px
+		line-height: 28px
+		letter-spacing: 0.6px
+		@media (max-width: 768px)
+			display: none
+	
+.header
+	&__contacts 
+		position: absolute
+		top: 30px
+		right: 0
+		@media (max-width: 768px)
+			display: none
+
+.link 
+	@include link
+
+	&--phone
+		color: $white
+
+.btn
+	@include btn
+
+	&--order 
+		margin-left: 32px
+		@include btn(40px)
+		@include btn-color($red, $white)
+		padding: 0 50px
+		height: 40px
+		font-size: 16px
+
+	&--gradient, &--contacts
+		width: 100%
+		@include btn-color($white, $gradient)
+		margin-bottom: 10px
+
+	
+
+.title
+	font-family: Montserrat 
+	width: 100%
+	text-align: center
+	font-size: 40px
+	line-height: 58px
+	color: $text-form
+	margin-bottom: 50px
+	@media ( max-width: 768px )
+		font-size: 30px
+		line-height: 42px
+
+	&--left
+		text-align: left
+
+	&--white
+		color: $white
+
+	&--slider
+		font-size: 64px 
+		line-height: 74px
+		font-weight: bold
+		text-align: left
+		color: $white
+		margin-bottom: 24px
+		@media (max-width: 768px)
+				font-size: 28px
+				line-height: 38px
+
+.text
+	font-size: 20px
+	line-height: 34px
+	color: $white
+	@media (max-width: 768px)
+		font-size: 14px
+		line-height: 22px
+
+.slider
+	padding-top: 100px
+	background-position: 700px 90%
+	background-size: 100%
+	background-repeat: no-repeat
+
+	@media ( max-width: 768px )
+		background-position: 10px -150px
+		background-size: 150%
+
+	&__pictures 
+		max-width: 50%
+		@media (max-width: 768px)
+			max-width: 100%
+	&__img 
+		@media ( max-width: 768px )
+			margin-bottom: 70px
+
+	&__item
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		overflow: hidden
+		@media ( max-width: 768px )
+			display: flex
+			flex-direction: column-reverse
+
+
+	&__title
+		display: block
+		font-size: 40px
+		line-height: 58px
+		font-weight: bold
+		color: $text-form
+		margin-bottom: 20px
+		@media ( max-width: 768px )
+			font-size: 30px
+			line-height: 42px
+
+	&__text
+		font-size: 20px
+		line-height: 36px
+		color: $text-color
+		margin-bottom: 20px
+		@media ( max-width: 768px )
+			font-size: 16px
+			line-height: 32px
+	
+.statistic 
+	position: relative
+	padding-left: 25px
+	width: 505px
+
+	@media screen and ( max-width: 768px )
+		width: auto
+
+	&::before
+		content: ""
+		position: absolute
+		left: 0
+		@include red-line
+
+	&__item
+		position: relative
+		font-size: 14px
+		line-height: 36px
+		color: $text-color
+		padding-left: 41px
+		margin-bottom: 5px
+
+		&::after
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			display: block
+			width: 24px
+			height: 24px
+			background-image: url(../img/svg/icon-slider1.svg)
+			background-repeat: no-repeat
+			background-position: 50% 50%
+				
+			
+				
+.arrow
+	&__block
+		position: relative
+		@media ( max-width: 768px )
+			display: none
+
+	position: relative
+	width: 48px
+	height: 48px
+	border-radius: 50%
+	border: none
+	background-color: transparent
+
+	&--left
+		background-image: url(../img/@2x/arrow-left.png)
+		margin-right: 5px
+
+	&--right
+		background-image: url(../img/@2x/arrow-right.png)
+
+.calculator 
+	margin-bottom: 0
+	background-color: $bg
+	padding-top: 65px
+
+	.container
+		display: flex
+		flex-wrap: wrap
+
+	&__img
+		position: relative
+	
+	&__form
+		display: flex
+		flex-direction: column
+		margin-bottom: 100px
+
+
+	.section__title
+		text-align: left
+
+.section
+	&__text
+		font-size: 20px
+		line-height: 36px
+		color: #5b5b5b
+		margin-bottom: 40px
+		@media (max-width: 768px)
+			font-size: 16px
+			line-height: 32px
+
+ 
+
+.left-column
+	max-width: 500px
+	width: 100%
+	margin: auto
+	@media (max-width: 768px)
+		margin-bottom: 50px
+		
+
+.right-column
+	margin: auto
+	max-width: 500px
+	width: 100%
+
+label
+	cursor: pointer
+	font-size: 18px
+	line-height: 32px
+	color: $text-form
+
+.form
+	&__text
+		font-family: Montserrat 
+		font-size: 24px
+		line-height: 32px
+		font-weight: bold
+		color: $text-form
+		width: 100%
+		margin-bottom: 10px
+
+	&__radio
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-bottom: 20px
+
+	&__range 
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+input, select
+	margin-bottom: 24px
+
+[type="range"]
+	width: 100%
+	margin-bottom: 48px
+
+[type="radio"]
+	border: 0
+	clip: rect(0 0 0 0)
+	height: 1px 
+	margin: -1px
+	overflow: hidden
+	padding: 0
+	position: absolute
+	width: 1px
+
+[type="radio"] + span 
+  	display: block
+
+[type="radio"] + span::before 
+	content: ''
+	display: inline-block
+	vertical-align: middle
+	width: 24px
+	height: 24px
+	border-radius: 50%
+	border: 1px solid $red
+	margin-right: 16px
+	
+
+[type="radio"]:checked + span::before
+	background-image: linear-gradient(225deg, #ff4a3a, #bf392d)
+	border: 5px solid #ffffff
+	box-shadow: 0 0 0 1px $red
+
+[type="radio"]:checked + span::after  
+
+#output 
+	font-size: 24px
+	line-height: 58px
+	color: $red
+
+
+
+.number-field 
+	display: flex
+	flex-direction: column
+
+	span
+		margin-bottom: 24px
+
+	&__btn-box 
+		margin-left: auto
+		width: 50px
+		height: 100%
+
+.field
+	width: 100%
+	height: 60px
+	padding-left: 24px
+	border-radius: 6px
+	border: 1px solid $border
+
+	&__block
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+	&--half
+		width: calc(50% - 10px)
+
+	&--number
+		position: relative
+		width: 190px
+		height: 48px
+
+
+
+.calculator__sum 
+	font-family: Montserrat
+	font-size: 40px
+	line-height: 58px
+	color: $red
+	font-weight: bold
+	margin-bottom: 48px
+
+.form__info 
+	font-size: 14px
+	line-height: 32px
+
+.clients
+	background-image: url(../img/svg/bg.svg)
+	background-repeat: no-repeat
+	background-position: bottom center
+	padding: 50px 0
+	@media (max-width: 360px)
+		padding: 0
+	@media (min-width: 360px) and (max-width: 420px)
+		padding: 40px 0
+	@media (min-width: 420px) and (max-width: 768px)
+		padding: 90px 0
+	@media (min-width: 768px) and (max-width: 900px)
+		padding: 70px 0
+	@media (min-width: 1024px) and (max-width: 1430px)
+		padding: 0 
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		padding-bottom: 30px
+
+	&__item
+		margin-bottom: 30px
+		margin-right: 30px
+		@media ( max-width: 768px)
+			&:nth-child(2n)
+				margin-right: 0
+				
+		// &:not(:nth-child(3n))
+		// 	margin-right: 100px
+		// 	margin-bottom: 60px
+
+		img
+			max-height: 60px
+		@media ( max-width: 768px)
+			max-width: 140px
+.work
+	.container 
+		display: flex
+		flex-wrap: wrap
+
+	&__list
+		margin: 0
+		margin-left: 250px
+		height: 100%
+		font-size: 24px
+		line-height: 32px
+		counter-reset: myCounter
+		position: relative
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		@media (max-width: 768px)
+			margin-left: 50%
+    		
+
+	&__item
+		max-width: 50%
+		list-style: none
+		position: relative
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+
+		&::before
+			counter-increment: myCounter
+			content: counter(myCounter, decimal-leading-zero)
+			font-family: Montserrat   
+			color: $red
+			display: block
+			text-align: left
+			margin-bottom: 8px
+			font-size: 50px
+			line-height: 61px
+			width: 100%
+			font-weight: 900
+	
+	&__icon
+		position: absolute
+		display: block
+		left: -150px
+		width: 110px
+		height: 110px
+		border-radius: 50%
+		background-color: rgba(255, 74, 58, 0.1)
+		&::after
+			position: absolute
+			content: ''
+			left: 54px
+			display: block
+			width: 3px
+			height: 72px
+			background: linear-gradient(181deg, #ff4a3a, #bf392d)
+
+		&--end::after
+			display: none
+
+		img
+			width: 100%
+			padding: 10px
+
+.features
+	&__navigation
+		font-family: Montserrat
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		font-size: 20px
+		line-height: 34px
+		font-weight: bold
+		margin-bottom: 32px
+		@media (max-width: 768px)
+			display: none
+		&--active
+			color: $red
+
+		li:not(:last-child)
+			margin-right: 20px
+
+		a
+			padding: 10px 20px
+
+	&__list
+		max-height: 528px
+	
+	&__item
+		overflow: hidden
+		height: 528px
+		background-size: cover
+		background-position: center
+		@media (max-width: 768px)
+			height: 342px
+
+		.info 
+			padding: 64px
+			position: absolute
+			background-image: url('../img/@2x/slider.png')
+			background-repeat: no-repeat
+			background-position: center right
+			width: 50%
+			height: 528px
+			@media (max-width: 768px)
+				width: 80%
+				height: 342px
+				padding: 24px
+			.text
+				max-width: 350px
+				@media (max-width: 768px)
+					max-width: 140px
+
+	
+	.arrow__block
+		position: absolute
+		padding-left: 64px
+		bottom: 60px
+		
+
+.review
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+
+	&__item
+		width: 400px
+		font-size: 16px
+		line-height: 24px
+		margin: auto
+		text-align: left
+
+	&__block
+		width: 100%
+		height: 600px
+		background-image: $gradient
+		border-radius: 6px
+		object-fit: contain
+		margin-bottom: 24px
+
+	&__name
+		display: block
+		font-weight: bold
+		margin-bottom: 6px
+
+.contacts
+	margin-bottom: 0
+	@media (max-width: 768px)
+		.field--half
+			width: 100%
+		
+		
+
+	.container
+		padding: 0 100px
+		@media (max-width: 768px)
+			padding: 0 15px
+
+	&__form
+		margin-bottom: 110px
+
+	&__info
+		margin-bottom: 80px
+		display: flex
+		flex-wrap: wrap
+	
+
+.map 
+	width: 100%
+	margin: 0 auto
+
+.text
+	&--head
+		display: block
+		font-size: 20px
+		line-height: 34px
+		margin-bottom: 9px
+
+
+input[type=range] 
+  -webkit-appearance: none
+  width: 100%
+
+input[type=range]:focus 
+  outline: none
+
+input[type=range]::-webkit-slider-runnable-track 
+  width: 100%
+  height: 3px
+  cursor: pointer
+  animate: 0.2s
+  background-image: linear-gradient(to left, #ff4a3a, #bf392d)
+  border-radius: 1px
+
+input[type=range]::-webkit-slider-thumb
+  height: 18px
+  width: 18px
+  border-radius: 50%
+  background-image: linear-gradient(225deg, #ff4a3a, #bf392d)
+  cursor: pointer
+  -webkit-appearance: none
+  margin-top: -8px
+
+input[type=range]:focus::-webkit-slider-runnable-track 
+  background: $red
+
+input[type=range]::-moz-range-track 
+  width: 100%
+  height: 3px
+  cursor: pointer
+  animate: 0.2s
+  border-radius: 1px
+  background-image: linear-gradient(to left, #ff4a3a, #bf392d)
+
+input[type=range]::-moz-range-thumb 
+  height: 18px
+  width: 18px
+  border-radius: 50%
+  background-image: linear-gradient(225deg, #ff4a3a, #bf392d)
+  cursor: pointer
+  -webkit-appearance: none
+  margin-top: -8px
+
+input[type=range]::-ms-track 
+  width: 100%
+  height: 8.4px
+  cursor: pointer
+  animate: 0.2s
+  background: transparent
+  border-color: transparent
+  border-width: 16px 0
+  color: transparent
+
+input[type=range]::-ms-fill-lower 
+  background: #2a6495
+  border: 0.2px solid #010101
+  border-radius: 2.6px
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d
+
+input[type=range]::-ms-fill-upper 
+  background: #3071a9
+  border: 0.2px solid #010101
+  border-radius: 2.6px
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d
+
+input[type=range]::-ms-thumb 
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d
+  border: 1px solid #000000
+  height: 36px
+  width: 16px
+  border-radius: 3px
+  background: #ffffff
+  cursor: pointer
+
+input[type=range]:focus::-ms-fill-lower 
+  background: #3071a9
+
+input[type=range]:focus::-ms-fill-upper 
+  background: #367ebd
+
+

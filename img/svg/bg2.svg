@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="429" viewBox="0 0 1440 429">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-2{fill:url(#linear-gradient);background-color:#fff}.cls-3{fill:#fff3f2;opacity:.1}
+        </style>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ff4a3a"/>
+            <stop offset="1" stop-color="#bf392d"/>
+        </linearGradient>
+    </defs>
+    <path d="M0,0 C250.84,0 249.15,0 1440,0 L500.00,429.00 L0.00,429.00 Z" style="stroke: none; fill: #f8f8f8;"></path>
+    <g id="Group_131" data-name="Group 131" transform="translate(0 0)">
+        <g id="Group_119" data-name="Group 119" transform="translate(0 0)">
+            <g id="bg" transform="translate(0 0)">
+                <path id="Subtraction_3" d="M1440 423.347H0V0h658.521a75.872 75.872 0 0 1 17.216 1.986 77.84 77.84 0 0 1 16.3 5.79 81.387 81.387 0 0 1 14.86 9.345A86.032 86.032 0 0 1 719.8 29.772l.2.237.914-1.078a85.764 85.764 0 0 1 12.839-12.3 81.245 81.245 0 0 1 14.7-9.08 77.768 77.768 0 0 1 16.078-5.621A75.876 75.876 0 0 1 781.493 0H1440v423.346z" class="cls-2" data-name="Subtraction 3" transform="translate(0 0)"/>
+                <path id="Fill_1" d="M343 155.011c-3.838 2.661-11.652 2.763-17.527-.368-8.506-4.528-15.694-15.043-23.87-27.68-16.235-25.107-27.74-50.714-60.255-59.938-34.356-9.738-121.536-9.09-162.972-16.818C36.53 42.408 24.07 15.687 0 0h343z" class="cls-3" data-name="Fill 1" transform="translate(1097)"/>
+            </g>
+        </g>
+    </g>
+</svg>

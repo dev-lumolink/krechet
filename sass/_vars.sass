@@ -1,0 +1,51 @@
+// User variables:
+$red: #ff4a3a
+$text-color: #5b5b5b
+$text-form: #171717
+$black: #000000
+$white: #ffffff
+$border: #dbdee7
+$text-size: 14px
+$desctop: 1440px
+$mobile: 768px
+$bottom-line: 1px solid rgba(89,95,111,0.4)
+$gradient: linear-gradient(263deg, #ff4a3a, #bf392d)
+$blue: #7096ff
+$bg: #f8f8f8
+
+
+@mixin red-line
+    background: linear-gradient(181deg, #ff4a3a, #bf392d)
+    display: block
+    height: 100%
+    width: 5px
+
+@mixin btn($height: 60px)
+    height: $height
+    border: none
+    font-size: 20px
+    line-height: 24px
+    font-weight: bold
+    border-radius: 6px
+    
+@mixin btn-color ($color, $bg)
+    color: $color
+    background: $bg
+    
+    
+
+@mixin link()
+    font-size: 16px
+    line-height: 24px
+    font-weight: bold
+
+@mixin list()
+    list-style: none
+    margin: 0
+    padding: 0
+
+    
+// // Breakpoints mixin settings (node_modules/bootstrap/scss/mixins/_breakpoints.scss)
+// // Example: +media-breakpoint-down(xs) - ≥576px / +media-breakpoint-up(sm) - // ≤576px
+// // Default variables: node_modules/bootstrap/scss/_variables.scss
+// $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1380" viewBox="0 0 1440 1380">
+    <defs>
+        <style>
+            .cls-1{fill:#f8f8f8}.cls-2{fill:url(#linear-gradient)}.cls-3{fill:#fff3f2;opacity:.1}
+        </style>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ff4a3a"/>
+            <stop offset="1" stop-color="#bf392d"/>
+        </linearGradient>
+    </defs>
+    <g id="Group_131" data-name="Group 131" transform="translate(0 -1002)">
+        <path id="Subtraction_4" d="M-647 3244.652l-.2-.259c-15.654-20.841-37.99-32.794-61.283-32.794H-1367v-956.946h658.521a69.209 69.209 0 0 1 17.216 2.188 73.241 73.241 0 0 1 16.3 6.378 80.714 80.714 0 0 1 14.86 10.294 90.681 90.681 0 0 1 12.911 13.934l.2.261.914-1.187a90.1 90.1 0 0 1 12.839-13.553 80.378 80.378 0 0 1 14.7-10 73.12 73.12 0 0 1 16.078-6.191 69.2 69.2 0 0 1 16.958-2.122H73V3211.6h-658.507a69.22 69.22 0 0 0-16.958 2.121 73.112 73.112 0 0 0-16.078 6.191 80.386 80.386 0 0 0-14.7 10 90.092 90.092 0 0 0-12.839 13.553l-.914 1.186z" class="cls-1" data-name="Subtraction 4" transform="translate(1367 -1252.653)"/>
+        <g id="Group_119" data-name="Group 119" transform="translate(0 52)">
+            <g id="bg" transform="translate(0 1901)">
+                <path id="Subtraction_3" d="M1440 423.347H0V0h658.521a75.872 75.872 0 0 1 17.216 1.986 77.84 77.84 0 0 1 16.3 5.79 81.387 81.387 0 0 1 14.86 9.345A86.032 86.032 0 0 1 719.8 29.772l.2.237.914-1.078a85.764 85.764 0 0 1 12.839-12.3 81.245 81.245 0 0 1 14.7-9.08 77.768 77.768 0 0 1 16.078-5.621A75.876 75.876 0 0 1 781.493 0H1440v423.346z" class="cls-2" data-name="Subtraction 3" transform="translate(0 5.653)"/>
+                <path id="Fill_1" d="M343 155.011c-3.838 2.661-11.652 2.763-17.527-.368-8.506-4.528-15.694-15.043-23.87-27.68-16.235-25.107-27.74-50.714-60.255-59.938-34.356-9.738-121.536-9.09-162.972-16.818C36.53 42.408 24.07 15.687 0 0h343z" class="cls-3" data-name="Fill 1" transform="translate(1097)"/>
+            </g>
+        </g>
+    </g>
+</svg>
