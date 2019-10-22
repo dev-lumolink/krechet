@@ -22,7 +22,8 @@
       <div class="row">
         <div class="col">
           <a href="" class="logo">
-            <img class="logo__img" src="./img/_src/logo.png" alt="Кретчет">
+            <img class="logo__img logo--desktop" src="./img/_src/logo.png" alt="Кречет">
+            <img src="img/Logo_dlya_sayta.png" alt="Кречет" class="logo__img logo--mobile">
             <span class="logo__text">Центр безопасности "Кречет"</span>
           </a>
         </div>
@@ -49,10 +50,7 @@
                   <div class="sale">Акция. Месяц обслуживания бесплатно!</div>
                   <b class="slider__title">Охранная сигнализация</b>
                   <ul class="statistic">
-                    <p class="slider__text">
-                      Без дополнительных платежей за sms-оповещение, реагирование и датчики.<br/>
-                      В ежемесячную оплату входит услуга мониторинга с выездом экипажа ГБР, sms-оповещения, ежеквартальное техническое обслуживание охранной системы и предоставление ежемесячных отчетов о событиях.
-                    </p>
+                    <p class="slider__text">В ежемесячную оплату входит услуга мониторинга с выездом экипажа ГБР, sms-оповещения, ежеквартальное техническое обслуживание охранной системы и предоставление ежемесячных отчетов о событиях.</p>
                   </ul>
                 </div>
               </div>
@@ -115,7 +113,7 @@
     <section class="calculator">
       <div class="container">
         <div class="row">
-        <div class="col">
+        <div class="col col_x--center">
           <h2 class="title title--left">Калькулятор расчёта стоимости</h2>
           <img class="calculator__img" src="img/svg/building.svg" alt="Калькулятор">
         </div>
@@ -250,7 +248,7 @@
           <li class="features__navigation--active" data-hash="4">2 человека в экипаже</li>
           <li data-hash="1">25 лет на рынке</a></li>
           <li data-hash="2">Более 100 городов</a></li>
-          <li data-hash="3">Без скрытых платежей</a></li>
+          <li data-hash="3">Большие возможности</a></li>
         </ul>
 
         <ul class="features__list owl-carousel" data-slider="features-screen">
@@ -278,11 +276,34 @@
           <li class="features__item" style="background-image: url('img/tinified/slide4.jpg')" data-hash="4">
             <div class="text__background" style="background-image: url(img/@2x/slider.png);"></div>
               <div class="info">
-                <h3 class="title--slider">Без скрытых платежей</h3>
+                <h3 class="title--slider">Большие возможности</h3>
                 <p class="text text--white">Несколько охранных предприятий, свой собственный мониторинговый центр со службой быстрого реагирования (ГБР), подразделением сопровождения ценных грузов, а также монтажным отделом готовым оснастить любой объект самыми передовыми техническими средствами защиты.</p>
               </div>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col col--grow">
+            <h2 class="title">О компании</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="picture eagle-bg" style="background-image: url(img/cover_1.jpg);">
+              <img src="img/eagle.png" alt="">
+            </div>
+          </div>
+          <div class="col">
+            <article>
+              <h3 class="form__text">Охранная компания "Кречет"</h3>
+              <p class="section__text">Компания была основана в 1995 году и на сегодняшний день занимает почетное место в рейтинге лучших охранных организаций Санкт-Петербурга. С 2013 года «Кречет» входит в Ассоциацию «Русское оружие» и является полноценным центром безопасности, предоставляющим полный спектр услуг в данном направлении от мониторинга объектов до вооруженной охраны.</p>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -386,7 +407,7 @@
           enctype="multipart/form-data">
           <div class="field__block">
             <select name="object" class="field">
-              <option disabled>Объект</option>
+              <option disabled selected default>Объект</option>
               <option value="Квартира">Квартира</option>
               <option value="Загородный дом">Загородный дом</option>
               <option value="Бизнес">Бизнес</option>
@@ -400,16 +421,6 @@
           </div>
           <button type="submit" class="btn btn--contacts">Связаться</button>
         </form>
-        <div class="contacts__info">
-          <div class="left-column">
-            <b class="text--head">Телефон</b>
-            <a href="tel:+78123392099">+7 (812) 339-20-99</a>
-          </div>
-          <div class="right-column">
-            <b class="text--head">Адрес</b>
-            <address>Санкт Петербург, ул. Заставская 7, БЦ МегаПарк</address>
-          </div>
-        </div>
       </div>
 
       <div class="map">
@@ -425,7 +436,7 @@
       <div class="row row_x--center">
         <ul>
           <li>
-            <a href="tel:+78123392099">8 (812) 339-20-99</a>
+            <a class="footer__phone" href="tel:+78123392099">8 (812) 339-20-99</a>
           </li>
           <li>
             <a href="mailto:info@krechet-spb.ru">info@krechet-spb.ru</a>
@@ -439,6 +450,7 @@
         <a href="#" class="icon icon--vk"></a>
         <a href="#" class="icon icon--fb"></a>
         <a href="#" class="icon icon--ig"></a>
+        <a href="#" class="icon icon--yt"></a>
       </div>
       <div class="row row_x--center">
         <copy>© 2006–2019, Центр Безопасности «КРЕЧЕТ». Все права защищены.</copy>
