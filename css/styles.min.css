@@ -4771,7 +4771,7 @@ progress {
 }
 .form-input input {
     margin: 0;
-    padding: 10px 25px;
+    padding: 10px 75px 10px 25px;
     text-align: center;
     border: none;
     outline: none;
@@ -5236,6 +5236,24 @@ header .container {
     margin-right: 24px
 }
 
+@media screen and (max-width: 768px) {
+    .logo--mobile {
+        display: inline-block;
+        height: auto!important;
+    }
+    .logo--desktop {
+        display: none;
+    }
+}
+@media (min-width:769px) {
+    .logo--mobile {
+        display: none;
+    }
+    .logo--desktop {
+        display: inline-block;
+    }
+}
+
 @media (max-width:768px) {
     .logo__img {
         margin-right: 0
@@ -5277,6 +5295,10 @@ header .container {
 }
 .link--phone:hover {
     color: #fff;
+}
+
+header .link--phone {
+    font-size: 20px;
 }
 
 .btn {
@@ -5912,6 +5934,7 @@ select {
     height: 200%;
     width: 3px;
     left: 55px;
+    transform: translateX(-50%);
     bottom: -100%;
     background-color: #fff;
     border: 2px solid #ff4a3a;
@@ -6129,10 +6152,16 @@ select {
 
 .features__item {
     position: relative;
-    background-size: cover;
+    background-size: 105%;
     background-position: left center;
     padding-bottom: 30px;
     overflow: hidden;
+}
+
+@media screen and (max-width:768px) {
+    .features__item {
+        background-size: cover;
+    }
 }
 
 .features .arrow__block {
@@ -6428,6 +6457,11 @@ section {
     display: flex;
     flex-flow: column;
     overflow: visible;
+    margin-bottom: 15px;
+}
+
+.col--grow {
+    flex: 1 0 100%;
 }
 
 .col_y--center,
@@ -6445,6 +6479,13 @@ section {
     position: relative;
     max-width: 50%;
     z-index: 9;
+}
+
+.eagle-bg {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* Extra small devices (phones, less than 768px) */
@@ -6493,11 +6534,12 @@ section {
     .slide__picture {
         position: relative;
     }
-    .link.link--phone {
+    /* .link.link--phone {
         display: none;
-    }
+    } */
     .hero,
-    .calculator {
+    .calculator,
+    .about {
       padding-bottom: 40px;
     }
     .work,
@@ -6505,7 +6547,7 @@ section {
       padding-top: 40px;
     }
     .features__item {
-        min-height: 650px;
+        min-height: 500px;
     }
     .features__item .info {
         max-width: 80%;
@@ -6562,14 +6604,15 @@ section {
         max-width: auto!important;
         height: 500px;
     }
-    .link.link--phone {
+    /* .link.link--phone {
         display: none;
-    }
+    } */
     .logo__text {
         display: none;
     }
     .hero,
-    .calculator {
+    .calculator,
+    .about {
       padding-bottom: 40px;
     }
     .work,
@@ -6577,10 +6620,13 @@ section {
       padding-top: 40px;
     }
     .features__item {
-        min-height: 600px;
+        min-height: 500px;
+    }
+    .features__item .info {
+        max-width: 60%;
     }
     .text__background {
-        right: 30%;
+        right: 20%;
     }
 }
 
@@ -6641,7 +6687,8 @@ section {
         height: 500px;
     }
     .hero,
-    .calculator {
+    .calculator,
+    .about {
       padding-bottom: 60px;
     }
     .work,
@@ -6649,13 +6696,13 @@ section {
       padding-top: 60px;
     }
     .features__item {
-        min-height: 650px;
+        min-height: 500px;
     }
     .features__item .info {
-        max-width: 30%;
+        max-width: 50%;
     }
     .text__background {
-        right: 50%;
+        right: 40%;
     }
 }
 
@@ -6682,7 +6729,7 @@ section {
         display: inline-block;
     }
     .features__item {
-        min-height: 600px;
+        min-height: 500px;
     }
     .logo__text {
         font-size: 20px;
@@ -6721,14 +6768,15 @@ section {
       padding-bottom: 120px;
     }
     .work,
-    .features {
+    .features,
+    .about {
       padding-top: 120px;
     }
     .logo__text {
         display: inline-block;
     }
     .features__item .info {
-        max-width: 30%;
+        max-width: 40%;
     }
 }
 
@@ -6759,4 +6807,19 @@ section {
 }
 .icon--vk {
     background-image: url(../img/svg/VK-active.svg);
+}
+.icon--yt {
+    background-image: url(../img/svg/youtube_2.svg);
+}
+
+.section--footer a.footer__phone {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+.picture {
+    margin-bottom: 150px;
+}
+.picture img {
+    margin-bottom: -150px;
 }
