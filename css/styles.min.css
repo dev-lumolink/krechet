@@ -5973,7 +5973,6 @@ select {
             align-items: flex-start;
     -ms-flex-line-pack: start;
         align-content: flex-start;
-    padding-left: 40px;
 }
 .list__item .value__nummer {
     position: relative;
@@ -5995,7 +5994,7 @@ select {
         margin-bottom: 30px;
     }
 }
-@media (max-width: 350px) {
+@media (max-width: 768px) {
     .list__item {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -6015,6 +6014,9 @@ select {
     }
     .list__item .value__text {
         text-align: center;
+    }
+    .list__item .icon {
+        margin-right: 0!important;
     }
 }
 
@@ -6724,6 +6726,9 @@ section {
     }
     .text__background {
         right: 40%;
+    }
+    .list__item .value {
+        padding-left: 10px;
     }
 }
 
