@@ -6169,7 +6169,7 @@ select {
 
 .features__item {
     position: relative;
-    background-size: 105%;
+    background-size: cover auto;
     background-position: left center;
     padding-bottom: 30px;
     overflow: hidden;
@@ -6583,6 +6583,15 @@ section {
     }
     .text__background {
         right: 0;
+    }
+    section.features {
+        display: none;
+    }
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+    section.features {
+        display: none;
     }
 }
 
