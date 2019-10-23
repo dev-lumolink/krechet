@@ -5116,14 +5116,25 @@ select {
     cursor: pointer;
     outline: none;
 }
-
-header {
-    height: 100px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9
+@media (min-width: 769px) {
+    header {
+        height: 100px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9
+    }
+}
+@media screen and (max-width:768px) {
+    header {
+        height: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9
+    }
 }
 
 header.fixed {
@@ -6558,6 +6569,7 @@ section {
         min-height: 500px;
     }
     .features__item .info {
+        padding: 30px;
         max-width: 80%;
     }
     .text__background {
@@ -6631,6 +6643,7 @@ section {
         min-height: 500px;
     }
     .features__item .info {
+        padding: 30px;
         max-width: 60%;
     }
     .text__background {
