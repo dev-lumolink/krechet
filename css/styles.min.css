@@ -5122,7 +5122,7 @@ select {
         top: 0;
         left: 0;
         right: 0;
-        z-index: 9
+        z-index: 9;
     }
 }
 @media screen and (max-width:768px) {
@@ -5132,7 +5132,8 @@ select {
         top: 0;
         left: 0;
         right: 0;
-        z-index: 9
+        z-index: 9;
+        background-color: #c0392b!important;
     }
 }
 
