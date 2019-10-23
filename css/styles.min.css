@@ -4650,7 +4650,6 @@ select {
 .hero .slide {
     display: flex;
     flex-flow: column;
-    justify-content: center;
 }
 
 .select-arrow {
@@ -6508,6 +6507,11 @@ section {
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
+@media all and (orientation:landscape) {
+    .row {
+        flex-flow: row nowrap;
+    }
+}
 @media (max-width: 767px) {
     .section--footer {
         padding: 30px 0;
@@ -6563,6 +6567,9 @@ section {
     .about {
       padding-bottom: 40px;
     }
+    .hero .slide {
+        justify-content: flex-start;
+    }
     .work,
     .features {
       padding-top: 40px;
@@ -6603,6 +6610,9 @@ section {
     }
     .hero {
         overflow: visible;
+    }
+    .hero .slide {
+        justify-content: center;
     }
     .hero__background {
         width: calc(969px - 40%);
@@ -6679,6 +6689,9 @@ section {
         /* height: 765px; */
         overflow: visible;
     }
+    .hero .slide {
+        justify-content: center;
+    }
     .slide--bg__img {
         display: none!important;
     }
@@ -6734,6 +6747,9 @@ section {
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    .hero .slide {
+        justify-content: center;
+    }
     .container {
         max-width: 1440px;
         padding: 0 100px;
