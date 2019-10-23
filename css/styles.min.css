@@ -6634,7 +6634,7 @@ section {
     img.slider__img {
         width: auto!important;
         max-width: auto!important;
-        height: 500px;
+        /* height: 500px; */
     }
     /* .link.link--phone {
         display: none;
@@ -6720,7 +6720,7 @@ section {
     img.slider__img {
         width: auto!important;
         max-width: auto!important;
-        height: 500px;
+        /* height: 500px; */
     }
     .hero,
     .calculator,
@@ -6797,7 +6797,7 @@ section {
     img.slider__img {
         width: auto!important;
         max-width: auto!important;
-        height: 500px;
+        /* height: 500px; */
     }
     img.img--camera {
         position: absolute;
