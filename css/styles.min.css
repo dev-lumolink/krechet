@@ -5237,7 +5237,12 @@ header .container {
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        overflow: hidden;
+    }
     .logo--mobile {
+        position: relative;
+        top: -20px;
         display: inline-block;
         height: auto!important;
     }
@@ -6503,6 +6508,9 @@ section {
         flex-flow: column;
         align-content: center;
         align-content: center;
+    }
+    .nowrap {
+        flex-flow: row nowrap;
     }
     .col {
         width: (100% - 15px);
